@@ -1,5 +1,5 @@
 from src.LinMix import MixLinBayes
-from example.data_dummy import dummy_data
+from example_data import dummy_data
 import numpy as np
 import matplotlib.pyplot as plt
 
