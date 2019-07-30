@@ -96,7 +96,7 @@ class MixLinBayes():
     def predict(self, x, with_mean = True):
         self.x_shared.set_value(x[:, np.newaxis])
 
-        if x_train.ndim == 1:
+        if x.ndim == 1:
             self.x_shared.set_value(x[:, np.newaxis])
         else:
             self.x_shared.set_value(x)
