@@ -105,7 +105,7 @@ class MixLinBayes():
         pp_traces = []
         for i in range(self.D):
             with self.model[i]:
-                pp_trace = pm.sample_ppc(self.trace[i], PP_SAMPLES)
+                pp_trace = pm.sample_posterior_predictive(self.trace[i], PP_SAMPLES)
 
             if with_mean:
                 pp_traces.append(pp_trace['obs'].mean(axis=0))
