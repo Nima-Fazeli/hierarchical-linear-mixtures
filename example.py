@@ -1,4 +1,4 @@
-from src.LinMix import MixLinBayes
+from hierarchical_linear_mixtures.LinMix import MixLinBayes
 from example_data import dummy_data
 import numpy as np
 import matplotlib.pyplot as plt
