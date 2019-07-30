@@ -23,7 +23,7 @@ def main():
     # pick data range to make predictions over
     pp_x = np.linspace(- 1.05, 1.05, 100)
     # use model to predict
-    y_pred_mean = lm.predict(pp_x)
+    y_pred_mean = lm.predict(pp_x)[0]
 
     ## plot prediction resutls
     fig, ax = plt.subplots(figsize=(8, 6))
